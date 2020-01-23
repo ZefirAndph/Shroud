@@ -4,5 +4,7 @@ project(Shroud)
 
 
 
-aux_source_directory(./src/wdt WDT)
-add_executable(WDT ${WDT})
+aux_source_directory(./src SRC)
+aux_source_directory(./src/shared SRC2)
+
+add_executable(Shroud ${SRC} ${SRC2})
